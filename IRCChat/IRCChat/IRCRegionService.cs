@@ -202,6 +202,7 @@ namespace Aurora.Addon.IRCChat
 			client.Messages.Chat += delegate(Object sender, IrcMessageEventArgs<TextMessage> e)
 			{
 				chatting(sender, e, sp);
+				MainConsole.Instance.RunCommand("alert user general "+sender+ " : " +e);
 			};
 
 			client.Messages.TimeRequest += delegate(Object sender, IrcMessageEventArgs<TimeRequestMessage> e)

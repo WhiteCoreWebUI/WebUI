@@ -1,0 +1,16 @@
+/Users/kevin/WebUI/IRCChat/IRCChat/obj/Release/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/kevin/WebUI/IRCChat/IRCChat/bin/Release/IRCChat.dll.mdb
+/Users/kevin/WebUI/IRCChat/IRCChat/bin/Release/IRCChat.dll
+/Users/kevin/WebUI/IRCChat/IRCChat/obj/Release/IRCChat.dll
+/Users/kevin/WebUI/IRCChat/IRCChat/obj/Release/IRCChat.dll.mdb
+/Users/kevin/WebUI/IRCChat/IRCChat/bin/Release/MetaBuilders.Irc.dll
+/Users/kevin/WebUI/IRCChat/IRCChat/bin/Release/Nini.dll
+/Users/kevin/WebUI/IRCChat/IRCChat/bin/Release/OpenMetaverse.dll
+/Users/kevin/WebUI/IRCChat/IRCChat/bin/Release/OpenMetaverseTypes.dll
+/Users/kevin/WebUI/IRCChat/IRCChat/bin/Release/WhiteCore.Framework.dll
+/Users/kevin/WebUI/IRCChat/IRCChat/bin/Release/OpenMetaverse.StructuredData.dll
+/Users/kevin/WebUI/IRCChat/IRCChat/bin/Release/log4net.dll
+/Users/kevin/WebUI/IRCChat/IRCChat/bin/Release/XMLRPC.dll
+/Users/kevin/WebUI/IRCChat/IRCChat/bin/Release/zlib.net.dll
+/Users/kevin/WebUI/IRCChat/IRCChat/bin/Release/SmartThreadPool.dll
+/Users/kevin/WebUI/IRCChat/IRCChat/bin/Release/protobuf-net.dll

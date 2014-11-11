@@ -59,6 +59,7 @@ namespace Aurora.Addon.IRCChat
 		private IScene m_scene;
 		private bool m_spamDebug = false;
 		private bool m_enabled = false;
+		//private m_GroupUser;
 		private Dictionary<UUID, Client> clients = new Dictionary<UUID,Client>();
 		private IConfig m_config;
 
@@ -69,6 +70,7 @@ namespace Aurora.Addon.IRCChat
 			{
 				m_enabled = ircConfig.GetBoolean("GroupsModule", m_enabled);
 				m_spamDebug = ircConfig.GetBoolean("DebugMode", m_spamDebug);
+				//m_GroupUser = ircConfig.Get("AvatarID","");
 				m_config = ircConfig;
 			}
 		}
@@ -187,11 +189,15 @@ namespace Aurora.Addon.IRCChat
 		{
 			IInstantMessagingService gMessaging = m_scene.RequestModuleInterface<IInstantMessagingService>();
 
+		
 			gMessaging.EnsureSessionIsStarted(groupID);
 			gMessaging.SendChatToSession(UUID.Zero, new GridInstantMessage()
 				{
-					FromAgentID = UUID.Random(),
+					FromAgentID = (UUID)"4fec5721-6980-40ca-815c-aba0264b175a",
+					//FromAgentID = UUID.Random(),
+					//FromAgentName = "VN_Irc",
 					FromAgentName = e.Message.Sender.Nick,
+					//ToAgentID = groupID,
 					ToAgentID = UUID.Zero,
 					Dialog = (byte)InstantMessageDialog.SessionSend,
 					Message = e.Message.Text,
@@ -201,8 +207,11 @@ namespace Aurora.Addon.IRCChat
 					BinaryBucket = new byte[0],
 					Timestamp = (uint)Util.UnixTimeSinceEpoch()
 				});
-		}
+	
 
+			MainConsole.Instance.InfoFormat("Sending " +e.Message.Text+ " to Group "+ groupID +" From "+e.Message.Sender.Nick);
+		
+		}
 		private void CreateIRCConnection (string network, string nick, string channel, UUID groupID)
 		{
 			// Create a new client to the given address with the given nick
@@ -224,7 +233,10 @@ namespace Aurora.Addon.IRCChat
 			// People are chatting, pay attention so I can be a lame echobot :)
 			client.Messages.Chat += delegate(Object sender, IrcMessageEventArgs<TextMessage> e)
 			{
-				chatting(sender, e, groupID);
+			
+				UUID mystupiduuid = (UUID)"4fec5721-6980-40ca-815c-aba0264b175a";
+				chatting(mystupiduuid, e, groupID);
+				MainConsole.Instance.InfoFormat("got " + groupID +" and " + e.Message.Text +" From: "+sender);
 			};
 
 			client.Messages.TimeRequest += delegate(Object sender, IrcMessageEventArgs<TimeRequestMessage> e)

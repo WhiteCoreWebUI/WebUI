@@ -1,14 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../../Downloads/Aurora-Sim-Optional-Modules-master/IRCChat/Modules/IRCParcelService.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="IRCChat/IRCGroupService.cs">
     <Files>
-      <File FileName="IRCChat/IRCGroupService.cs" Line="44" Column="44" />
-      <File FileName="../../Downloads/Aurora-Sim-Optional-Modules-master/IRCChat/Modules/IRCGroupService.cs" Line="6" Column="6" />
-      <File FileName="../../Downloads/Aurora-Sim-Optional-Modules-master/IRCChat/Modules/IRCParcelService.cs" Line="19" Column="19" />
-      <File FileName="IRCChat/IRCParcelService.cs" Line="53" Column="53" />
-      <File FileName="IRCChat/IRCRegionService.cs" Line="16" Column="16" />
-      <File FileName="../../Downloads/Aurora-Sim-Optional-Modules-master/IRCChat/Modules/IRCRegionService.cs" Line="17" Column="17" />
-      <File FileName="../../Downloads/Aurora-Sim-Optional-Modules-master/Scripting/Modules/ScriptModuleComms/ScriptModuleCommsModule.cs" Line="1" Column="1" />
+      <File FileName="IRCChat/IRCGroupService.cs" Line="97" Column="97" />
+      <File FileName="IRCChat/IRCParcelService.cs" Line="41" Column="41" />
+      <File FileName="IRCChat/IRCRegionService.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
